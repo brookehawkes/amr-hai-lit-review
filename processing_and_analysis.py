@@ -54,8 +54,7 @@ custom_stopwords = {
 }
 
 # Combine
-#stop_words.update(custom_stopwords)
-stop_words = stop_words.union(custom_stopwords)
+my_stop_words = list(stop_words.union(custom_stopwords))
 
 # Update the preprocess_text function to exclude custom stopwords
 def preprocess_text(text):
@@ -147,7 +146,7 @@ if __name__ == "__main__":
 
 
     # Vectorize the processed abstracts
-    vectorizer = TfidfVectorizer(ngram_range=(1, 2), max_features=5000)
+    vectorizer = TfidfVectorizer(ngram_range=(1, 2), max_features=5000, stop_words=my_stop_words)
     X = vectorizer.fit_transform(df['abstract'])
 
     # Perform Topic Modeling using LDA (Latent Dirichlet Allocation)
