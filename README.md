@@ -22,29 +22,36 @@ The project involves the following steps:
 
     - A word cloud showing the most common terms across all abstracts.
 
+---
 
+## Prerequisites
+To run this project, you need to have Python installed, as well as the required libraries.
 
-- Fetches all abstracts from PubMed using the `Bio.Entrez` API with the keywords "antimicrobial resistance AND hospital aquired infections"
-- Cleans and preprocesses text using `nltk` and `spaCy`
-- Performs topic modeling with **LDA** (`scikit-learn`)
-- Visualizes topic trends over time with `plotly`
-- Displays topic word clouds for easy interpretation
+Python Libraries
+The following libraries are required for the project:
+
+- requests: For fetching data from PubMed API.
+
+- nltk: For natural language processing tasks like stopword removal and lemmatization.
+
+- spacy: For advanced text processing and tokenization.
+
+- sklearn: For machine learning tasks like text vectorization and topic modeling.
+
+- pandas: For data manipulation and storage.
+
+- matplotlib, seaborn, plotly: For data visualization.
+
+- wordcloud: For generating word clouds.
 
 ---
 
-## Dataset
+## Files
+- fetch_and_process_pubmed.py: The main Python script to fetch, process, and analyze PubMed abstracts.
 
+- requirements.txt: A list of Python dependencies required for the project.
 
+- experiment.md: Detailed documentation of the experiment.
 
+- results.md: Final results and analysis
 
-Project Overview: Briefly explain the task you're working on.
-
-Dataset: Describe the dataset you're using (e.g., source, size, format).
-
-Modeling Approach: Summarize the models you're using and why.
-
-Installation Instructions: Guide for setting up the environment and installing dependencies.
-
-How to Run the Code: Clear instructions for running each script.
-
-Results: Brief description of what your results show.
