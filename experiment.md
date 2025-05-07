@@ -57,7 +57,7 @@ The cleaned tokens were then joined back into a single string per abstract for v
 - Used `TfidfVectorizer` from `sklearn.feature_extraction.text` with:
   - `ngram_range=(1, 2)` 
   - `max_features=5000` 
-  - `stop_words=stop_words` (english + custom stopwords added)
+  - `stop_words=my_stop_words` (english + custom stopwords added)
 
 ## Evaluation
 
