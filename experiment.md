@@ -80,8 +80,7 @@ The cleaned tokens were then joined back into a single string per abstract for v
 ## Key Findings
 
 - **Shifts Over Time**: Topics related to antimicrobial stewardship rose steadily after the past few years, possibly related to initiatives related to appropriate antibiotic use and decreased prescribing.
-- **Topic Diversity**: Some abstracts span multiple topics, reflecting interdisciplinary approaches in the field.
-- **Recurrent Themes**: (still need to add)
+- **Recurrent Themes**: urinary tract infections, resistant bacteria, public health practices
 
 ## Limitations
 
