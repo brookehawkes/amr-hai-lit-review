@@ -47,7 +47,7 @@ The following libraries are required for the project:
 ---
 
 ## Files
-- fetch_and_process_pubmed.py: The main Python script to fetch, process, and analyze PubMed abstracts.
+- processing_and_analysis.py: The main Python script to fetch, process, and analyze PubMed abstracts.
 
 - requirements.txt: A list of Python dependencies required for the project.
 
