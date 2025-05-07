@@ -10,34 +10,34 @@ This document presents the findings from applying Latent Dirichlet Allocation (L
 
 The LDA model extracted the following five topics:
 
-1. **Topic 1: Infection Control Measures**
-   - *Top Terms*: hand hygiene, isolation, compliance, protocol, prevention
+1. **Topic 1: Urinary Tract Infections**
+   - *Top Terms*: urinary, tract, urinary tract, risk, bacteria
 
-2. **Topic 2: Antibiotic Resistance Mechanisms**
-   - *Top Terms*: resistance genes, plasmids, mutation, efflux pumps, gene transfer
+2. **Topic 2: Resistant Bacteria**
+   - *Top Terms*: multidrugresistant, bacteria, methicillinresistant, pathogen, bacterial
 
-3. **Topic 3: Clinical Treatment Strategies**
-   - *Top Terms*: antibiotic therapy, dosage, treatment outcomes, patient response, clinical trials
+3. **Topic 3: Associated Infections**
+   - *Top Terms*: carbapenemresistant, hiv, cre, tuberculosis, difficile, enterobacteriaceae
 
-4. **Topic 4: Hospital-Acquired Infection Epidemiology**
-   - *Top Terms*: incidence rates, outbreak, surveillance, nosocomial infections, risk factors
+4. **Topic 4: Public Health Practices**
+   - *Top Terms*: health, use, stewardship, HAIs, covid, country, public, global, public helath, practice
 
-5. **Topic 5: Diagnostic and Screening Techniques**
-   - *Top Terms*: PCR, culture methods, sensitivity, specificity, rapid tests
+5. **Topic 5: Biology of AMR**
+   - *Top Terms*: isolates, strain, baumannii, gene, mrsa, aureus, penumoniae, staphylococcus, acinetobacter, nosocomial
 
 ### Temporal Trends
 
 Analysis of topic prevalence over publication years revealed:
 
-- **Topic 2** (Antibiotic Resistance Mechanisms) showed a steady increase from 2010 to 2020, indicating growing research interest.
-- **Topic 4** (Hospital-Acquired Infection Epidemiology) peaked around 2015, possibly due to heightened awareness and reporting.
-- **Topic 5** (Diagnostic and Screening Techniques) saw a surge post-2018, aligning with advancements in rapid diagnostic tools.
+- **Topic 2** (Resistant Bacteria) and **Topic 4** (Public Health Practices) showed a steady increase from 2012 to 2024, indicating potentially more public health and prevention efforts in regards to AMR.
+- **Topic 1** (Urinary Tract Infections) and **Topic 5** (Biology of AMR) have steadily decreased since 2012, potentially due to more research efforts being focused elsewhere.
+- **Topic 3** (Associated Infections) has remained steady over time.
 
 ## Visualizations
 
 ### Topic Distribution Over Time
 
-![Topic Distribution Over Time](images/topic_distribution_over_time.png)
+<img width="1890" alt="amr_overtime" src="https://github.com/user-attachments/assets/ef2d12ef-c0a4-4372-9112-b6289e5376f7" />
 
 *Figure 1: Proportion of each topic across publication years.*
 
@@ -57,12 +57,6 @@ Analysis of topic prevalence over publication years revealed:
 
 - The increasing trend in **Topic 2** underscores the escalating concern over antibiotic resistance mechanisms in clinical settings.
 - The prominence of **Topic 5** in recent years reflects the emphasis on developing and implementing rapid diagnostic methods to curb hospital-acquired infections.
-
-## Limitations
-
-- The dataset was limited to abstracts, which may not capture the full depth of research articles.
-- The selection of five topics was arbitrary; exploring different numbers could yield alternative insights.
-- Temporal analysis is constrained by the publication dates of available abstracts, which may not represent real-time research developments.
 
 ## Future Work
 
