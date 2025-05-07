@@ -11,13 +11,13 @@ This document presents the findings from applying Latent Dirichlet Allocation (L
 The LDA model extracted the following five topics:
 
 1. **Topic 1: Urinary Tract Infections**
-   - *Top Terms*: urinary, tract, urinary tract, risk, bacteria
+   - *Top Terms*: urinary, tract, urinary tract, risk, bacteria, factor, coli, mortality, risk factor, gramnegative
 
 2. **Topic 2: Resistant Bacteria**
-   - *Top Terms*: multidrugresistant, bacteria, methicillinresistant, pathogen, bacterial
+   - *Top Terms*: multidrugresistant, bacteria, methicillinresistant, pathogen, bacterial, organism, transmission, activity, healthcare, cell
 
 3. **Topic 3: Associated Infections**
-   - *Top Terms*: carbapenemresistant, hiv, cre, tuberculosis, difficile, enterobacteriaceae
+   - *Top Terms*: carbapenemresistant, hiv, cre, tuberculosis, difficile, enterobacteriaceae, tb, crab, pylorus, vancomycinresistant
 
 4. **Topic 4: Public Health Practices**
    - *Top Terms*: health, use, stewardship, HAIs, covid, country, public, global, public helath, practice
