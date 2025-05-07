@@ -48,22 +48,22 @@ The cleaned tokens were then joined back into a single string per abstract for v
 ### Parameters
 
 - `n_components` (number of topics): 5 (chosen based on interpretability)
-- `max_iter`: 10
-- `learning_method`: `'online'`
-- `random_state`: 42
+- `doc_topic_prior`: 0.1
+- `topic_word_prior`: 0.05
+- `random_state`: 27
 
 ### Vectorization
 
-- Used `CountVectorizer` from `sklearn` with:
-  - `min_df=5` (terms must appear in at least 5 documents)
-  - `max_df=0.9` (terms appearing in >90% of docs are excluded)
-  - `stop_words='english'`
+- Used `TfidfVectorizer` from `sklearn.feature_extraction.text` with:
+  - `ngram_range=(1, 2)` 
+  - `max_features=5000` 
+  - `stop_words=stop_words` (english + custom stopwords added)
 
 ## Evaluation
 
 ### Topic Interpretability
 
-- Manually inspected the top 10 words per topic to assign rough thematic labels (e.g., **infection control**, **drug resistance**, **clinical treatment**).
+- Manually inspected the top 10 words per topic to assign rough thematic labels
 - Example top words for one topic: mrsa, pneumonia, methicillinresistant, aureus, unit, intensive, intensive unit, multidrugresistant, icu, mortality
 
 ### Temporal Analysis
@@ -81,12 +81,13 @@ The cleaned tokens were then joined back into a single string per abstract for v
 
 - **Shifts Over Time**: Topics related to antimicrobial stewardship rose steadily after the past few years, possibly related to initiatives related to appropriate antibiotic use and decreased prescribing.
 - **Topic Diversity**: Some abstracts span multiple topics, reflecting interdisciplinary approaches in the field.
-- **Recurrent Themes**: Resistance genes, treatment outcomes, and hospital interventions are consistently prominent.
+- **Recurrent Themes**: (still need to add)
 
 ## Limitations
 
 - The number of topics (5) was selected heuristically; further tuning or coherence-based selection could improve results.
 - Abstracts do not contain the full context of articles; results might differ using full-text analysis.
+- The purpose of this analysis was mainly exploratory. Further predictive modeling / supervised modeling could be done to better understand the complexities of the existing literature.
 
 ## Conclusion
 
