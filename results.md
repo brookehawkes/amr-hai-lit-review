@@ -56,6 +56,7 @@ Analysis of topic prevalence over publication years revealed:
 ![topic4_final](https://github.com/user-attachments/assets/f690e682-9a98-4500-9001-455522df34b0)
 
 **Topic 5: Biology of AMR**
+![topic5_final](https://github.com/user-attachments/assets/ecdcc67e-8feb-4e48-86d0-e1a45ec43a82)
 
 ### Word Clouds
 
@@ -72,6 +73,7 @@ Analysis of topic prevalence over publication years revealed:
 ![topic4_wordcloud](https://github.com/user-attachments/assets/63f0f604-ce0a-470d-a8c9-d7b416162f6a)
 
 **Topic 5: Biology of AMR**
+![topic5_wordcloud](https://github.com/user-attachments/assets/0b9d1671-cc98-44a0-ab10-deec157d648b)
 
 **Overall**
 ![overall_wordcloud](https://github.com/user-attachments/assets/acd02cbb-8d88-42d2-a1a8-deef9738b647)
